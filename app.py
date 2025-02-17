@@ -14,7 +14,7 @@ app.secret_key = "your_secret_key"
 # SQLite Database Configuration
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///realestate.db"
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
-app.config["UPLOAD_FOLDER"] = "static/uploads"
+app.config["UPLOAD_FOLDER"] = "static/uploads"  # No need to create this folder
 
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)  # Initialize Flask-Migrate
